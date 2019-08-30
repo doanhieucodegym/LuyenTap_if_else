@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Good_Fast _Cheap</title>
+</head>
+<body>
+<h3> Good _Fast_ Cheap</h3>
+<label> Good</label> <input type ="checkbox" id="good" onclick="evenclick();"  /></br>
+<label> Fast</label> <input type ="checkbox" id="fast" onclick="evenclick();"  /></br>
+<label> Cheap</label><input type ="checkbox" id="cheap" onclick="evenclick();"  /></br>
+<script>
+    function evenclick() {
+       // let s0tt = document.getElementById("good").checked;``
+       // alert(stt);
+    //     ///lay gia tri
+        var checkGood = document.getElementById("good").checked;
+        var checkFast = document.getElementById("fast").checked;
+        var checkCheap = document.getElementById("cheap").checked;
+        if(checkGood == true && checkFast == true){
+            document.getElementById("cheap").checked = false;
+        }else if(checkGood == true && checkCheap == true){
+            document.getElementById("fast").checked = false;
+        }else if( checkFast == true && checkCheap == true ){
+            document.getElementById("good").checked = false;
+
+        }else if( checkFast == true && checkGood == true ){
+            document.getElementById("cheap").checked = false;
+
+        }else if( checkCheap == true && checkFast == true ){
+            document.getElementById("good").checked = false;
+
+        }else if( checkCheap == true && checkGood == true ){
+            document.getElementById("fast").checked = false;
+
+        }
+
+    }
+
+</script>
+</body>
+</html>

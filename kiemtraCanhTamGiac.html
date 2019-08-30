@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm  tra cạnh Tam  Giác</title>
+</head>
+<body>
+<h3>Kiểm tra ba số có phải là cạnh của tam giác </h3>
+<script>
+    let a = parseFloat( prompt("nhập cạnh  a vào !"));
+    let b = parseFloat( prompt("nhập cạnh  b vào !"));
+    let c = parseFloat( prompt("nhập cạnh  c vào !"));
+    if(a< 0 || b < 0 || c <0){
+        document.write(" Nhập sai cạnh tam giác , các cạnh  phải  lớn hơn  0");
+    }else if(a+b < c || b+c < a ||a+c <b ){
+        document.write("Nhập  sai cạnh tam giác")
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+body{
+
+
+}
+#love {
+    /*width: 350px;*/
+    /*height: 350px;*/
+    /*border: 1px solid chocolate;*/
+   /* margin: auto;*/
+   /* position: absolute;*/
+}
+#love h2{
+    position:relative;
+    left: 200px;
+    top: 240px;
+
+}
+#love #No {
+    position:relative;
+    left:300px; top:260px;
+}
+#love #Yes {
+    position:relative;
+    left:290px; top:260px;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng  dụng Do You Love Me ! </title>
+    <link rel="stylesheet" href="Css_DoLoveMy.css">
+</head>
+<body>
+<div id ="love">
+    <h2>Do You Love Me ?</h2>
+    <input type="button" onclick="yes();" id="Yes" value="Yes"/>
+    <input type="button" onmousemove="no();" id="No" value="NO"/>
+
+</div>
+
+<script>
+ function yes(){
+     let a= Math.random();
+     alert("Anh cũng vậy !");
+
+
+ }
+ function no() {
+     //ham  Math.random là  lấy số  ngẫu  nhiên từ 0.1 đến 1
+     var x = Math.round(Math.random() * window.innerWidth);
+     // window.innerWidth là lấy  độ rộng của  màn hình
+     //đặt vị trí revelti cho thẻ
+     var y = Math.round(Math.random() * window.innerHeight);
+     //truyền lại cho left và top
+     document.getElementById('No').style.left = x + 'px';
+     document.getElementById('No').style.top = y + 'px';
+
+ }
+
+</script>
+</body>
+</html>
